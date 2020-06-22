@@ -1,7 +1,6 @@
 // import the Sequelize constructor from the library
 const Sequelize = require('sequelize');
 require('dotenv').config();
-
 // create connection to our db and Heroku
 let sequelize;
 
@@ -14,5 +13,4 @@ if (process.env.JAWSDB_URL) {
     port: 3306
   });
 }
-
 module.exports = sequelize;

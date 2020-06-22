@@ -12,7 +12,7 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #791123;
     font-weight: bold;
     transition: color .1s;
   }
@@ -22,7 +22,7 @@
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #d3d61f;
     border: 0;
     padding: 1%;
     color: white;
@@ -37,8 +37,12 @@
   }
   
   .post-list {
-    margin: 0;
-    padding: 0;
+    margin: 0 300px;
+    padding: 0 50px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
   
   textarea, input {
@@ -68,27 +72,42 @@
   .wrapper {
     width: 100%;
     min-height: 100%;
-    max-width: 1200px;
+    
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    background-color: #d3d61f;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
+    padding: 0;
   }
   
-  header h1 {
-    font-size: 1em;
+  header nav {
+    font-size: 2em;
+  }
+
+  nav a {
+    padding: 10px;
   }
   
   main {
     flex: 1;
     padding: 2% 4%;
+    background-color: #3f8a29;
+  }
+  main h1 {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 3em;
+    background-color: #d3d61f;
+    color: #791123;
   }
   
   .btn-no-style {
@@ -97,7 +116,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #791123;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -110,7 +129,7 @@
   }
   
   .delete-post-btn {
-    background-color: #d41414;
+    background-color: #791123;
   }
   
   .delete-post-btn:hover {
@@ -133,15 +152,6 @@
     margin: -1.5% 0 2% 0;
   }
   
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
   .comment-form {
     margin-bottom: 5%;
   }
@@ -149,11 +159,9 @@
   .comment {
     padding: 1%;
     margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
     background-color: #fff5eb;
   }
+  
   
   .comment .meta {
     font-size: 90%;
@@ -175,4 +183,7 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: #d3d61f;
+    color: #791123;
+    font-size: 30px;
   }
